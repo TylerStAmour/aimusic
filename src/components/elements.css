@@ -1,0 +1,11 @@
+.navlink {
+    padding: 0.25rem 0.25rem 0.5rem;
+    border-bottom: 2px solid white;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+    transition: 0.45s
+}
+
+.navlink:hover {
+    border-color: darkorchid;
+    transform: translateY(-3px);
+}
