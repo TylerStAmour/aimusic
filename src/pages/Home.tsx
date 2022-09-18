@@ -25,7 +25,7 @@ export default () => {
                 </div>
                 <div className={"flex flex-row justify-center items-end grow text-white mt-28"}>
                     <div className={"flex grow flex-col"}>
-                        <div className={"flex justify-center items-end bg-gradient-to-b from-neutral-900 to-black h-36"}>
+                        <div className={"flex justify-center items-end bg-gradient-to-b from-neutral-900 to-dark h-36"}>
                             <div className={"flex justify-center mb-6"}>
                                 <a href={""} className={"flex flex-col items-center hover:opacity-75 hover:text-secondary hover:-translate-y-0.5 transition ease-in duration-100"}>
                                     <p className={"text-xl !text-gray-300"}>
@@ -43,7 +43,19 @@ export default () => {
                 </div>
             </div>
             <div className={"relative z-10"}>
-                <div className={"h-24 bg-black"}/>
+                <div className={"h-64 bg-dark"}/>
+                <div className={"h-36 bg-gradient-to-b from-dark to-neutral-900 "}/>
+                <div className={"grid grid-cols-2 gap-4 bg-neutral-900 pt-24 pl-28 pr-28 pb-24"}>
+                    <div>
+                        <p className={"text-white text-2xl"}>C'est quoi un réseau neuronal?</p>
+                        <p className={"text-gray-400 mt-2"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                        </p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -2,10 +2,12 @@ import Particles from "react-tsparticles";
 import React, { RefObject, useCallback } from "react";
 import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
+import { loadParallaxMover } from "tsparticles-move-parallax";
 
 export default () => {
     const particlesInit = useCallback(async (engine: Engine) => {
-       await loadFull(engine);
+        await loadParallaxMover(engine)
+        await loadFull(engine);
     }, []);
 
     return (
@@ -17,6 +19,11 @@ export default () => {
                 fullScreen: {
                     enable: true,
                     zIndex: 1,
+                },
+                parallax: {
+                    enable: true,
+                    force: 60,
+                    smooth: 10,
                 },
                 particles: {
                     color: {
