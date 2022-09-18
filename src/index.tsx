@@ -11,7 +11,7 @@ import "@fontsource/raleway";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <ParallaxProvider>
-        <Container className={"h-screen flex flex-col bg-neutral-900"}>
+        <Container className={"h-screen flex flex-col overflow-x-hidden bg-neutral-900"}>
             <Navigation />
             <BrowserRouter>
                 <Routes>
