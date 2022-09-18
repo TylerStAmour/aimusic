@@ -1,5 +1,5 @@
 import Particles from "react-tsparticles";
-import { useCallback } from "react";
+import React, { RefObject, useCallback } from "react";
 import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
 
@@ -10,10 +10,14 @@ export default () => {
 
     return (
         <Particles
-            id={"tsparticles"}
             init={particlesInit}
             options={{
-                fpsLimit: 120,
+                fpsLimit: 60,
+                detectRetina: true,
+                fullScreen: {
+                    enable: true,
+                    zIndex: 1,
+                },
                 particles: {
                     color: {
                         value: "#9932CCFF",
@@ -25,25 +29,22 @@ export default () => {
                         direction: "top",
                         enable: true,
                         random: true,
-                        speed: 2,
+                        speed: 1.5,
                         straight: true,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
                     },
                     opacity: {
                         value: 0.4,
                     },
-                    shape: {
-                        type: "star",
+                    links: {
+                        enable: true,
+                        distance: 125,
+                        color: "#9932CCFF",
+                        opacity: 0.75,
                     },
                     size: {
                         value: {
                             min: 1,
-                            max: 2,
+                            max: 3,
                         },
                     },
                 },
@@ -51,3 +52,4 @@ export default () => {
         />
     )
 }
+
