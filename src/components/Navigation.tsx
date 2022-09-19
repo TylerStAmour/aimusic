@@ -2,7 +2,7 @@ import './elements.css';
 import {tsParticles} from "tsparticles-engine";
 
 export default () => (
-    <div className={"flex justify-center mb-14 text-white"}>
+    <div className={"flex justify-center mb-14 text-white pt-8"} id={"navbar"}>
         <a href={"/accueil"} className={"navlink"}>
             Accueil
         </a>

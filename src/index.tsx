@@ -12,7 +12,6 @@ import "@fontsource/raleway";
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <ParallaxProvider>
         <Container className={"h-screen bg-neutral-900"}>
-            <Navigation />
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home />} />

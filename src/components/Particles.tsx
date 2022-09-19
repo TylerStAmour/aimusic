@@ -40,13 +40,13 @@ export default () => {
                         straight: true,
                     },
                     opacity: {
-                        value: 0.4,
+                        value: 0.3,
                     },
                     links: {
                         enable: true,
                         distance: 125,
                         color: "#9932CCFF",
-                        opacity: 0.75,
+                        opacity: 0.6,
                     },
                     size: {
                         value: {

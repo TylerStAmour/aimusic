@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default ({children, className}: Props) => (
-    <div className={`pt-8 ${className}`}>
+    <div className={`${className}`}>
         {children}
     </div>
 );
