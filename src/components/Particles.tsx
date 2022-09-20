@@ -44,7 +44,7 @@ export default () => {
                     },
                     links: {
                         enable: true,
-                        distance: 125,
+                        distance: (window.innerWidth > 1366 ? 200 : 125),
                         color: "#9932CCFF",
                         opacity: 0.6,
                     },

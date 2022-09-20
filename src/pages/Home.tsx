@@ -71,8 +71,16 @@ export default () => {
                     </div>
                 </div>
                 <hr className={"border border-dark border-solid"} />
-                <div className={"bg-neutral-800 pt-24"}>
-
+                <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-24"}>
+                    <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg"}>
+                        <img src={"/svg/neuralnetwork.svg"} />
+                    </div>
+                    <div ref={viewMoreRef} className={"pb-12 sm:pb-0"}>
+                        <p className={"text-white text-xl sm:text-2xl"}>Influence sur la musique</p>
+                        <p className={"text-gray-400 mt-2"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
