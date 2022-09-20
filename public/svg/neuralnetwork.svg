@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
     <path fill="none" d="M0 0h700v350H0z"/>
     <g fill="none" transform="translate(0 -702.36)">
-        <g stroke="#7e1dad" stroke-width="2">
+        <g stroke="#9932CC" stroke-width="2">
             <path d="M635 902.36l-170-50M635 852.36l-170-50M465 902.36l170-50M465 952.36l170-50M635 902.36l-170-100M635 852.36l-170-100M465 952.36l170-100M465 1002.4l170-100M465 1002.4l170-150M635 902.36l-170-150M465 902.36h170M465 852.36h170"/>
         </g>
         <circle

@@ -56,11 +56,11 @@ export default () => {
             <div className={"relative z-10"}>
                 <div className={"h-52 bg-dark"}/>
                 <div className={"h-36 bg-gradient-to-b from-dark to-neutral-900"}/>
-                <p className={"bg-neutral-900 text-white text-3xl pt-12 xl:pt-18 flex justify-center"}>
+                <p ref={viewMoreRef} className={"bg-neutral-900 text-white text-3xl pt-12 xl:pt-18 flex justify-center"}>
                     Les Réseaux Neuronales
                 </p>
                 <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-900 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-24"}>
-                    <div ref={viewMoreRef} className={"pb-12 sm:pb-0"}>
+                    <div className={"pb-12 sm:pb-0"}>
                         <p className={"text-white text-xl sm:text-2xl"}>C'est quoi un réseau neuronal?</p>
                         <p className={"text-gray-400 mt-2"}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
@@ -71,17 +71,24 @@ export default () => {
                     </div>
                 </div>
                 <hr className={"border border-dark border-solid"} />
-                <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-24"}>
-                    <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg"}>
-                        <img src={"/svg/neuralnetwork.svg"} />
+                <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-6"}>
+                    <div className={"flex h-52 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg"}>
+                        <img src={"/svg/soundwave.svg"} />
                     </div>
-                    <div ref={viewMoreRef} className={"pb-12 sm:pb-0"}>
+                    <div className={"pb-12 sm:pb-0"}>
                         <p className={"text-white text-xl sm:text-2xl"}>Influence sur la musique</p>
                         <p className={"text-gray-400 mt-2"}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
                         </p>
                     </div>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     version="1.1"
+                     viewBox="0 0 2880 200"
+                     className={"bg-neutral-900"}
+                >
+                    <path className={"w-full"} fill={"rgb(38 38 38)"} d={"M 0 0 V 200 c 1440 -200 2880 0 2880 0 V 0"} />
+                </svg>
             </div>
         </div>
     )
