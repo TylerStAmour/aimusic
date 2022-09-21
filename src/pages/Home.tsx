@@ -57,7 +57,7 @@ export default () => {
                 <div className={"h-52 bg-dark"}/>
                 <div className={"h-36 bg-gradient-to-b from-dark to-neutral-900"}/>
                 <p ref={viewMoreRef} className={"bg-neutral-900 text-white text-3xl pt-12 xl:pt-18 flex justify-center"}>
-                    Les Réseaux Neuronales
+                    Les Réseaux Neuronaux
                 </p>
                 <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-900 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-24"}>
                     <div className={"pb-12 sm:pb-0"}>
@@ -66,13 +66,13 @@ export default () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
                         </p>
                     </div>
-                    <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-800 rounded-lg"}>
+                    <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-800 rounded-lg border-dark border-solid border-[1px]"}>
                         <img src={"/svg/neuralnetwork.svg"} />
                     </div>
                 </div>
                 <hr className={"border border-dark border-solid"} />
-                <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-6"}>
-                    <div className={"flex h-52 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg"}>
+                <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-24 2xl:pt-32 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-12"}>
+                    <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg border-dark border-solid border-[1px]"}>
                         <img src={"/svg/soundwave.svg"} />
                     </div>
                     <div className={"pb-12 sm:pb-0"}>
@@ -89,6 +89,19 @@ export default () => {
                 >
                     <path className={"w-full"} fill={"rgb(38 38 38)"} d={"M 0 0 V 200 c 1440 -200 2880 0 2880 0 V 0"} />
                 </svg>
+                <div className={"bg-neutral-900 pt-24"}>
+                    <p className={"text-3xl text-white flex justify-center"}>
+                        OpenAI Jukebox
+                    </p>
+                    <div className={"flex flex-col items-center text-gray-400 pt-16 pb-12"}>
+                        <p className={"max-w-2xl"}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                        </p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
             </div>
         </div>
     )
