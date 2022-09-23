@@ -64,7 +64,7 @@ export default () => {
                     <div className={"pb-12 sm:pb-0"}>
                         <p className={"text-white text-xl sm:text-2xl"}>C'est quoi un réseau neuronal?</p>
                         <p className={"text-gray-400 mt-2"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                            Les réseaux neuronaux sont des systèmes informatiques qui fonctionnent de manière similaire au cerveau humain. Ils sont généralement constitués de plusieurs modules et couches, afin de simuler plus précisément les neurones et le processus de réflexion du cerveau humain. Le premier réseau neuronal a été inventé en 1943 par Walter Pitts et Warren McCulloch. Leur objectif était de créer un système capable de résoudre des problèmes comme le cerveau humain.
                         </p>
                     </div>
                     <div className={"flex h-52 w-full sm:w-auto self-center justify-self-center bg-neutral-800 rounded-lg border-dark border-solid border-[1px]"}>
