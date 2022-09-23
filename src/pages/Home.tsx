@@ -3,6 +3,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import Particles from "../components/Particles";
 import React, { useRef } from "react";
 import Navigation from "../components/Navigation";
+import TrackEmbed from "../components/TrackEmbed";
 
 export default () => {
     const viewMoreRef = useRef<HTMLInputElement>(null);
@@ -89,17 +90,26 @@ export default () => {
                 >
                     <path className={"w-full"} fill={"rgb(38 38 38)"} d={"M 0 0 V 200 c 1440 -200 2880 0 2880 0 V 0"} />
                 </svg>
-                <div className={"bg-neutral-900 pt-24"}>
-                    <p className={"text-3xl text-white flex justify-center"}>
+                <div className={"flex flex-col items-center bg-neutral-900 pt-24"}>
+                    <p className={"text-3xl text-white "}>
                         OpenAI Jukebox
                     </p>
-                    <div className={"flex flex-col items-center text-gray-400 pt-16 pb-12"}>
+                    <div className={"text-gray-400 pt-16 pb-8"}>
                         <p className={"max-w-2xl"}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
                         </p>
                     </div>
-                    <div>
-
+                    <div className={"grid grid-cols-2 gap-6 pb-12"}>
+                        <TrackEmbed
+                            className={"bg-neutral-800"}
+                            title={"Jazz, in the style of Frank Sinatra & Ella Fitzgerald"}
+                            src={"audio/track-frank-sinatra.mp3"}/>
+                        <TrackEmbed
+                            className={"bg-neutral-800"}
+                            title={"Classic Pop, in the style of Frank Sinatra"}
+                            src={"audio/track-frank-sinatra.mp3"}/>
+                        <TrackEmbed className={"bg-neutral-800"} title={"ee"} src={"audio/track-frank-sinatra.mp3"}/>
+                        <TrackEmbed className={"bg-neutral-800"} title={"ee"} src={"audio/track-frank-sinatra.mp3"}/>
                     </div>
                 </div>
             </div>
