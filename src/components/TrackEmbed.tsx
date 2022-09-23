@@ -11,7 +11,7 @@ interface Props {
 
 const secondsToTimeFormat = (seconds: number) => {
     const secondsTime = Math.round(seconds % 60);
-    return `${Math.floor(seconds / 60).toString()}:${secondsTime < 10 ? `0${secondsTime}` : secondsTime}`
+    return `${isNaN(seconds) ? "0" : Math.floor(seconds  / 60).toString()}:${isNaN(secondsTime) ? "00" : secondsTime < 10 ? `0${secondsTime}` : secondsTime}`
 }
 
 export default ({ title, src, className }: Props) => {
