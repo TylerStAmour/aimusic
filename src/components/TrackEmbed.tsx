@@ -2,7 +2,6 @@ import React, {useEffect, useRef, useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause, faVolumeXmark, faVolumeHigh, faVolumeLow } from "@fortawesome/free-solid-svg-icons"
 import {IconDefinition} from "@fortawesome/free-regular-svg-icons";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 interface Props {
     title: string;
@@ -18,7 +17,6 @@ const secondsToTimeFormat = (seconds: number) => {
 export default ({ title, src, className }: Props) => {
     const [ isPlaying, setPlaying ] = useState(false);
     const [ volumeVisible, setVolumeVisible ] = useState(false);
-    const [ progress, setProgress ] = useState(0);
     const [ max, setMax ] = useState(5);
     const [ audio, setAudio ] = useState<HTMLAudioElement>({} as HTMLAudioElement);
     const [ icon, setIcon ] = useState<IconDefinition>(faVolumeLow);
@@ -41,21 +39,13 @@ export default ({ title, src, className }: Props) => {
         setMax(audio.currentTime);
     }, []);
 
-    useEffect(() => {
-        setInterval(() => {
-            setProgress((audio.currentTime / audio.duration) * 100)
-            console.log(audio.currentTime + " " + audio.duration + " " + timeSlider.current.value)
-        }, 1000);
-    }, [ audio ]);
-
-
     const pauseOrPlay = () => {
         isPlaying ? audio.pause() : audio.play();
         setPlaying(!isPlaying);
     }
 
     return (
-        <div className={className + " flex items-center w-[30rem] h-18 rounded pl-4 pb-3 pt-3 pr-3"}>
+        <div className={className + " flex items-center w-full sm:w-[30rem] h-18 rounded pl-4 pb-3 pt-3 pr-3"}>
             <FontAwesomeIcon
                 icon={isPlaying ? faPause : faPlay}
                 color={"#9932CC"}

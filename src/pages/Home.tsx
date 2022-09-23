@@ -30,7 +30,7 @@ export default () => {
                         </div>
                         <div className={"flex flex-col mt-24 2xl:mt-36 items-center text-white"}>
                             <p className={"max-w-3xl z-10 pl-4 pr-4"}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                                L'intelligence artificiel a une influence sur notre vie qui devient de plus en plus large à chaque jour. Il est présent dans nos voiture, nos jeux vidéos, nos cellulaires, nos télévisions, ainsi qu'une longue liste d'autre appareil. Mais voyons comment l'IA à créer un chemin dans le domain de musique.
                             </p>
                         </div>
                     </div>
@@ -94,26 +94,26 @@ export default () => {
                     <p className={"text-3xl text-white "}>
                         OpenAI Jukebox
                     </p>
-                    <div className={"text-gray-400 pt-16 pb-8"}>
-                        <p className={"max-w-2xl"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                    <div className={"text-gray-400 pt-16 pb-12"}>
+                        <p className={"max-w-2xl ml-4 mr-4"}>
+                            Jukebox est un réseau neuronal crée en 2020 par OpenAI, fondé par Elon Musk parmi d'autres investisseurs. Cette forme d'intélligence artificiel est capable de générée des lyriques, des parole et des chants instrumentales, tout ensemble. Ce qui rend ce réseau neuronal unique est le fait qu'il est capable de créer des chansons nouvelles dans le style d'un autre artiste et genre. Les chansons ci-dessus n'ont pas été chanté par des humains, mais sont plutôt le produit de cette IA.
                         </p>
                     </div>
-                    <div className={"grid grid-cols-2 gap-6 pb-12"}>
+                    <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-6 pb-12"}>
                         <TrackEmbed
-                            className={"bg-neutral-800"}
+                            className={"bg-neutral-800 mb-4 sm:mb-0"}
                             title={"Jazz, in the style of Frank Sinatra & Ella Fitzgerald"}
                             src={"audio/track-frank-sinatra.mp3"}/>
                         <TrackEmbed
-                            className={"bg-neutral-800"}
+                            className={"bg-neutral-800 mb-4 sm:mb-0"}
                             title={"Classic Pop, in the style of Frank Sinatra"}
                             src={"audio/track-frank-sinatra.mp3"}/>
                         <TrackEmbed
-                            className={"bg-neutral-800"}
+                            className={"bg-neutral-800 mb-4 sm:mb-0"}
                             title={"Rock, in the style of Elvis Presley"}
                             src={"audio/track-elvis-presley.mp3"}/>
                         <TrackEmbed
-                            className={"bg-neutral-800"}
+                            className={"bg-neutral-800 mb-4 sm:mb-0"}
                             title={"Pop, in the style of Céline Dion"}
                             src={"audio/track-celine-dion.mp3"}/>
                     </div>
