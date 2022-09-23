@@ -108,8 +108,14 @@ export default () => {
                             className={"bg-neutral-800"}
                             title={"Classic Pop, in the style of Frank Sinatra"}
                             src={"audio/track-frank-sinatra.mp3"}/>
-                        <TrackEmbed className={"bg-neutral-800"} title={"ee"} src={"audio/track-frank-sinatra.mp3"}/>
-                        <TrackEmbed className={"bg-neutral-800"} title={"ee"} src={"audio/track-frank-sinatra.mp3"}/>
+                        <TrackEmbed
+                            className={"bg-neutral-800"}
+                            title={"Rock, in the style of Elvis Presley"}
+                            src={"audio/track-elvis-presley.mp3"}/>
+                        <TrackEmbed
+                            className={"bg-neutral-800"}
+                            title={"Pop, in the style of Céline Dion"}
+                            src={"audio/track-celine-dion.mp3"}/>
                     </div>
                 </div>
             </div>

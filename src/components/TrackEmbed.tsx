@@ -44,6 +44,7 @@ export default ({ title, src, className }: Props) => {
     useEffect(() => {
         setInterval(() => {
             setProgress((audio.currentTime / audio.duration) * 100)
+            console.log(audio.currentTime + " " + audio.duration + " " + timeSlider.current.value)
         }, 1000);
     }, [ audio ]);
 
@@ -54,7 +55,7 @@ export default ({ title, src, className }: Props) => {
     }
 
     return (
-        <div className={className + " flex items-center w-[28rem] h-18 rounded pl-4 pb-3 pt-3 pr-3"}>
+        <div className={className + " flex items-center w-[30rem] h-18 rounded pl-4 pb-3 pt-3 pr-3"}>
             <FontAwesomeIcon
                 icon={isPlaying ? faPause : faPlay}
                 color={"#9932CC"}
@@ -64,18 +65,17 @@ export default ({ title, src, className }: Props) => {
                 fixedWidth
             />
             <div className={"flex flex-col w-full"}>
-                <p className={"text-gray-300 text-xs mb-2"}>{title}</p>
+                <p className={"text-gray-300 text-[0.725rem] mb-2"}>{title}</p>
                 <input
                     ref={timeSlider}
                     type={"range"}
                     min={0}
                     max={max}
                     value={audio.currentTime}
-                    step={1}
                     className={`bg-secondary pr-1 !w-full`}
                     onChange={(evt) => setCurrentTime(parseInt(evt.currentTarget.value))}
                 />
-                <p className={"text-gray-400 text-xs text-end pt-1 pr-4"}>{secondsToTimeFormat(audio.currentTime)} / {secondsToTimeFormat(audio.duration)}</p>
+                <p className={"text-gray-400 text-[0.7rem] text-end pt-1 pr-4"}>{secondsToTimeFormat(audio.currentTime)} / {secondsToTimeFormat(audio.duration)}</p>
             </div>
             <div onMouseEnter={() => setVolumeVisible(true)}
                  onMouseLeave={() => setVolumeVisible(false)}
