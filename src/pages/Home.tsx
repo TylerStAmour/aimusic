@@ -99,7 +99,7 @@ export default () => {
                             Jukebox est un réseau neuronal crée en 2020 par OpenAI, fondé par Elon Musk parmi d'autres investisseurs. Cette forme d'intélligence artificiel est capable de générée des lyriques, des parole et des chants instrumentales, tout ensemble. Ce qui rend ce réseau neuronal unique est le fait qu'il est capable de créer des chansons nouvelles dans le style d'un autre artiste et genre. Les chansons ci-dessus n'ont pas été chanté par des humains, mais sont plutôt le produit de cette IA.
                         </p>
                     </div>
-                    <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-6 mb-28"}>
+                    <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-6 mb-36"}>
                         <TrackEmbed
                             className={"bg-neutral-800 mb-4 sm:mb-0"}
                             title={"Jazz, in the style of Frank Sinatra & Ella Fitzgerald"}
@@ -120,19 +120,19 @@ export default () => {
                 </div>
             </div>
             <hr className={"border border-dark border-solid"} />
-            <div className={"flex flex-col jusitfy-center items-center bg-neutral-900 pt-14"}>
-                <p className={"text-3xl text-white mb-12"}>Plus d'information</p>
+            <div className={"flex flex-col jusitfy-center items-center bg-neutral-900 pt-20"}>
+                <p className={"text-3xl text-white mb-12 z-10"}>Plus d'information</p>
                 <div className={"flex flex-col sm:grid sm:grid-cols-2 text-xl sm:gap-10 mb-28 text-white"}>
-                    <a href={"/accueil"} className={"navlink w-full flex justify-center"}>
+                    <a href={"/accueil"} className={"navlink w-full !ml-0 !mr-0 flex justify-center"}>
                         Accueil
                     </a>
-                    <a href={"/impacte"} className={"navlink w-full flex justify-center"}>
+                    <a href={"/impacte"} className={"navlink w-full !ml-0 !mr-0 flex justify-center"}>
                         Impacte
                     </a>
-                    <a href={"/experimente"} className={"navlink w-full flex justify-center"}>
+                    <a href={"/experimente"} className={"navlink !ml-0 !mr-0 w-full flex justify-center"}>
                         Expérimente
                     </a>
-                    <a href={"/technologie"} className={"navlink w-full flex justify-center"}>
+                    <a href={"/technologie"} className={"navlink !ml-0 !mr-0 w-full flex justify-center"}>
                         Technologie
                     </a>
                 </div>
