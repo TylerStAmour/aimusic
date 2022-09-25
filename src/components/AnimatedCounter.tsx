@@ -4,13 +4,18 @@ interface Props {
     value: number;
     time: number; // seconds
     className?: string;
-    showDecimals?: boolean
+    showDecimals?: boolean;
+    decimalPlaces?: number;
 }
 
-export default ({ value, time, className, showDecimals }: Props) => {
+export default ({ value, time, className, showDecimals, decimalPlaces }: Props) => {
     const [ count, setCount ] = useState(0);
 
-    // Quadratic equation: y = (x)(x - 2(time))
+    if (decimalPlaces !== undefined) {
+        showDecimals = true;
+    }
+
+    // Quadratic equation: y = a(x)(x - 2(time))
     const increase = 0.01; // seconds
     const a = value / (time * (time - 2 * time));
     const max = a * time * (time - 2 * time)
@@ -21,16 +26,16 @@ export default ({ value, time, className, showDecimals }: Props) => {
             const x = i * increase;
             const newCount = a * x * (x - 2 * x);
             setCount(value * (newCount / max))
-            console.log((value * (newCount / max)) + " " + (newCount / max))
-            i++;
             if (i >= (time / increase)) {
-                setCount(value); // avoid any issues with floating point calculations
                 clearTimeout(interval);
             }
+            i++;
         }, increase * 1000)
     }, [ setCount ])
 
     return (
-        <p className={className}>{showDecimals ? count : Math.trunc(count)}</p>
+        <p className={className}>
+            {showDecimals ? decimalPlaces !== undefined ? count.toFixed(decimalPlaces) : count : Math.trunc(count)}
+        </p>
     )
 }
