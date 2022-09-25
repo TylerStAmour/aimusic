@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import AnimatedCounter from "../components/AnimatedCounter";
 import React from "react";
 
-
 export default () => (
     <div className={"flex flex-col bg-neutral-900"}>
         <Navigation />
@@ -78,7 +77,8 @@ export default () => (
                 <div className={"pb-12 sm:pb-0"}>
                     <p className={"text-white text-xl sm:text-2xl"}>Impacte sur les embauches</p>
                     <p className={"text-gray-400 mt-2"}>
-                        Les intelligences artificielles, comme Jukebox, sont très utile pour la composition de musique. Tandis qu'ils ne sont pas parfait au moment, ils peuvent encore nous aider dans le processus. Alors, certaines embauches dans l'industrie de la musique vont disparaître en faveur de l'automation. Par exemple, un dévéloppeur indépendent n'aurais pas besoin d'embaucher un musicien pour la musique d'un jeu, plutôt, il pourra le genéré avec un réseau neuronal. Mais, lorsqu'il y a des embauches perdu, il y a toujours d'autres embauches créer. Donc on va continuer a observer la croissance des emplois concernent l'intelligence artificielle.                    </p>
+                        Les intelligences artificielles, comme Jukebox, sont très utile pour la composition de musique. Tandis qu'ils ne sont pas parfait au moment, ils peuvent encore nous aider dans le processus. Alors, certaines embauches dans l'industrie de la musique vont disparaître en faveur de l'automation. Par exemple, un dévéloppeur indépendent n'aurais pas besoin d'embaucher un musicien pour la musique d'un jeu, plutôt, il pourra le genéré avec un réseau neuronal. Mais, lorsqu'il y a des embauches perdu, il y a toujours d'autres embauches créer. Donc on va continuer a observer la croissance des emplois concernent l'intelligence artificielle.
+                    </p>
                 </div>
                 <div className={"flex h-52 w-full pr-2 pl-2 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg border-dark border-solid border-[1px]"}>
                     <img src={"/svg/graph.svg"} />

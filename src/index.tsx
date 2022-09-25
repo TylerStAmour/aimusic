@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Experiment from './pages/Experiment';
 import Impact from './pages/Impact';
 import NotFound from './pages/NotFound';
+import Technology from "./pages/Technology";
 import Container from "./components/Container";
 import './index.css'
 import "@fontsource/raleway";
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                     <Route path={"/"} element={<Home />} />
                     <Route path={"/impacte"} element={<Impact />}/>
                     <Route path={"/experimente"} element={<Experiment />} />
-                    <Route path={"/technologie"} />
+                    <Route path={"/technologie"} element={<Technology />}/>
                     <Route path={"*"} element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
