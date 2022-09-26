@@ -28,7 +28,6 @@ export default () => {
             <div className={"flex justify-center"}>
                 <div className={"flex flex-col max-w-3xl"}>
                     <p className={"text-md text-gray-400 max-w-3xl"}>Ci-dessous vous pouvez entrer du texte et le soumettre à GPT-3 afin qu'il soit traité. Prendre en note que le texte doit être en anglais. Cette démonstration est seulement possible parce que GPT-3 est un réseau publique et open source. De plus, il fournit un API pour qu'on puisse intégré dans nos site web, comme on voit ici.</p>
-                    <form className={"mb-6"}>
                         <textarea
                             className={"bg-neutral-200 w-full mt-4 rounded h-36 p-2 mb-2 outline-none resize-none"}
                             onChange={(event) => setInput(event.currentTarget.value)}
@@ -44,10 +43,9 @@ export default () => {
                         <input
                             type={"submit"}
                             value={"Soumettre"}
-                            onSubmit={submit}
-                            className={"text-white cursor-pointer bg-gradient-to-br from-[#5d0787] via-[#7e1dad] to-secondary transition hover:opacity-75 duration-300 pt-1 pb-1 pr-2 pl-2 rounded"}
+                            onClick={submit}
+                            className={"text-white w-min cursor-pointer bg-gradient-to-br from-[#5d0787] via-[#7e1dad] to-secondary transition hover:opacity-75 duration-300 pt-1 pb-1 pr-2 pl-2 rounded"}
                         />
-                    </form>
                 </div>
             </div>
             <Footer/>
