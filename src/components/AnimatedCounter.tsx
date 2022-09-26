@@ -51,7 +51,7 @@ export default ({ value, time, className, showDecimals, decimalPlaces, colorGrad
 
         }, increase * 1000)
     }, [ setVariables ])
-    console.log(variables.color)
+
     return (
         <p className={className} style={{ color: variables.color }}>
             {showDecimals ? decimalPlaces !== undefined ? variables.count.toFixed(decimalPlaces) : variables.count : Math.trunc(variables.count)}

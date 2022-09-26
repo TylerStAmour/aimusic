@@ -16,7 +16,7 @@ export default () => (
             <p className={"text-gray-400 text-md max-w-3xl pb-6 pt-2"}>
                 GPT-3 est l'un des peu réseaux neuronaux qui est open-source et accessible par le publique. Son but est d'utiliser la méthode « deep learning » pour produire du texte qui resemble un humain. Il consiste d'un réseau transformateur avec une longeur de 2048 « tokens. » Dans ce cas, un « token » est comparable à un mot. Voici un exemple ci-dessous:
             </p>
-            <img src={"tokens.png"} className={"rounded-lg"}/>
+            <img src={"/tokens.png"} className={"rounded-lg"}/>
             <p className={"text-gray-400 text-xs pb-6 pt-2"}>
                 Vous pouvez tester cette méthode de « token » pour vous même avec <a href={"https://beta.openai.com/tokenizer"} target={"_blank"} className={"text-secondary underline"}>cette outil</a> créer par OpenAI.
             </p>
