@@ -11,9 +11,11 @@ export default () => {
     const submit = () => {
         submitGPTRequest(input)
             .then(resp => {
+                console.log("hello")
                 setResponse(resp);
             })
             .catch(error => {
+                console.log('aa');
                 setError(error);
             });
     };
@@ -28,24 +30,26 @@ export default () => {
             <div className={"flex justify-center"}>
                 <div className={"flex flex-col max-w-3xl"}>
                     <p className={"text-md text-gray-400 max-w-3xl"}>Ci-dessous vous pouvez entrer du texte et le soumettre à GPT-3 afin qu'il soit traité. Prendre en note que le texte doit être en anglais. Cette démonstration est seulement possible parce que GPT-3 est un réseau publique et open source. De plus, il fournit un API pour qu'on puisse intégré dans nos site web, comme on voit ici.</p>
+                    <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-4"}>
                         <textarea
-                            className={"bg-neutral-200 w-full mt-4 rounded h-36 p-2 mb-2 outline-none resize-none"}
+                            className={"bg-neutral-200 placeholder:text-gray-400 w-full mt-4 rounded h-36 p-2 mb-2 outline-none resize-none"}
                             onChange={(event) => setInput(event.currentTarget.value)}
+                            placeholder={"Entrez du texte ici..."}
                         />
-                        {response.length > 0 &&
-                            <div
-                                className={"bg-neutral-200 flex flex-col w-full mt-4 rounded h-36 mb-2 outline-none resize-none"}
-                            >
-                                <p className={"text-black font-semibold pt-1 pb-0.5 pl-2"}>GPT-3 Output</p>
-                                <hr className={"w-full border border-solid border-neutral-700"}/>
-                            </div>
-                        }
-                        <input
-                            type={"submit"}
-                            value={"Soumettre"}
-                            onClick={submit}
-                            className={"text-white w-min cursor-pointer bg-gradient-to-br from-[#5d0787] via-[#7e1dad] to-secondary transition hover:opacity-75 duration-300 pt-1 pb-1 pr-2 pl-2 rounded"}
-                        />
+                        <div
+                            className={"bg-neutral-200 flex flex-col w-full mt-4 rounded h-36 mb-2 outline-none resize-none"}
+                        >
+                            <p className={`${response.length == 0 ? "text-gray-400" : "text-black"} p-2`}>
+                                {response.length > 0 ? response : "La réponse sera affichée ici..."}
+                            </p>
+                        </div>
+                    </div>
+                    <input
+                        type={"submit"}
+                        value={"Soumettre"}
+                        onClick={submit}
+                        className={"text-white w-min cursor-pointer bg-gradient-to-br from-[#5d0787] via-[#7e1dad] to-secondary transition hover:opacity-75 duration-300 pt-1 pb-1 pr-2 pl-2 rounded"}
+                    />
                 </div>
             </div>
             <Footer/>
