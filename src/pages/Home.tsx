@@ -80,7 +80,7 @@ export default () => {
                     <div className={"pb-12 sm:pb-0"}>
                         <p className={"text-white text-xl sm:text-2xl"}>Influence sur la musique</p>
                         <p className={"text-gray-400 mt-2"}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet est in urna fringilla interdum. Cras quis tristique nisl. Sed ex nisl, convallis eget laoreet non, congue at quam. Sed porttitor lobortis aliquet. Aenean accumsan vel nibh pellentesque rutrum. Vivamus ultricies metus sapien, et dignissim nisl eleifend et. Quisque sed neque urna. Vestibulum congue ex ut diam placerat elementum.
+                            L'IA a eu un impact majeur sur l'industrie de la musique, de la composition au mastering, la création de nouveaux sons et même la décision de savoir qui sera le prochain « Big Hit ». Lorsqu’on compose, l'IA peut composer des chansons de deux manières différentes: elle peut les générer par midi ou créer elle-même chaque son.<br/><br/> Le midi est une option très populaire, car le réseau neuronal n'a pas besoin de créer le son qu'il souhaite utiliser, il utilise plutôt la valeur de la note qui peut ensuite être modifiée individuellement selon les préférences du composeur. Des IA comme AI Duet et Aiva peuvent produire des données midi, tandis que Jukebox recrée les instruments et les voix des chansons, ce qui est aussi très impressionnant.
                         </p>
                     </div>
                 </div>
