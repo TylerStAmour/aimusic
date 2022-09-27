@@ -13,7 +13,7 @@ export default () => {
     const [ input, setInput ] = useState("");
 
     const submit = () => {
-        submitGPTRequest(input)
+        submitGPTRequest(validateInput(input))
             .then(resp => {
                 setResponse(resp);
             })
