@@ -55,9 +55,10 @@ export default () => (
             <div className={"flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 bg-neutral-800 pt-20 pl-10 sm:pl-20 pr-10 sm:pr-20 pb-24"}>
                 <div className={"pb-12 sm:pb-0"}>
                     <p className={"text-white text-xl sm:text-2xl"}>Le fonctionnement d'un réseau neuronal</p>
+                    <div>
                     <p className={"text-gray-400 mt-2"}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra quam sed aliquet laoreet. Proin mollis luctus posuere. Curabitur venenatis malesuada odio at interdum. Nam a laoreet diam. Duis vitae fringilla urna. Pellentesque tincidunt ultrices efficitur. Ut in luctus neque. Fusce lorem velit, pharetra et porttitor ac, vulputate sed magna. Vivamus non varius purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ornare lorem eget est hendrerit accumsan. Nulla eget neque metus. Vestibulum non risus pharetra, vehicula dolor ac, porttitor dui. In at nisl at erat feugiat aliquet. Praesent fringilla, urna et pulvinar blandit, felis massa ornare sem, quis vestibulum urna mi eu enim.
-                    </p>
+                        Les réseaux neuronaux comportent généralement trois couches : la couche d'entrée, la couche cachée et la couche de sortie. Le réseau reçoit des informations de la couche d'entrée, les analyse avec la couche cachée, puis envoie une réponse à la couche de sortie. Les réseaux neuronaux stockent des informations dans les nombreuses couches cachées, ce qui les aide à résoudre des problèmes et à reconnaître des motifs, comme un cerveau humain. Ces couches se multiplient et changent constamment, tout comme les neurones du cerveau humain. En anglais, on appelle cela "Deep Learning".<br/><br/> Enseigner un réseau neuronal est également similaire à l'enseignement d'un humain. Avant qu'il puisse résoudre des problèmes ou reconnaître des patrons, vous devez lui montrer la réponse au problème ou la manière de le résoudre, puis il établit un ensemble de règles qu'il doit suivre en fonction des informations qui lui ont été données.                    </p>
+                    </div>
                 </div>
                 <div className={"flex h-52 w-full pr-2 pl-2 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg border-dark border-solid border-[1px]"}>
                     <img src={"/svg/graph.svg"} />

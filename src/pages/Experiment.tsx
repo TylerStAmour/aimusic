@@ -3,19 +3,22 @@ import Footer from "../components/Footer";
 import {useState} from "react";
 import submitGPTRequest from "../api/gpt/submitGPTRequest";
 
+const validateInput = (value: string): string => {
+    // GPT doesnt handle new lines or quotes very well
+    return value.replace("\n", " ").replace('"', "\"");
+}
+
 export default () => {
     const [ response, setResponse ] = useState("");
-    const [ error, setError ] = useState("");
     const [ input, setInput ] = useState("");
 
     const submit = () => {
         submitGPTRequest(input)
             .then(resp => {
-                console.log(resp);
                 setResponse(resp);
             })
             .catch(error => {
-                setError(error);
+                console.error(error);
             });
     };
 
