@@ -38,7 +38,7 @@ export default () => {
                         <div
                             className={"bg-neutral-200 flex flex-col w-full mt-4 rounded h-36 mb-2 outline-none resize-none"}
                         >
-                            <p className={`${response === "" ? "text-gray-400" : "text-black"} p-2`}>
+                            <p className={`${response === "" ? "text-gray-400" : "text-black text-sm"} p-2`}>
                                 {response !== "" ? response : "La réponse sera affichée ici..."}
                             </p>
                         </div>
