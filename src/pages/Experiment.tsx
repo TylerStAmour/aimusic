@@ -31,15 +31,16 @@ export default () => {
             </div>
             <div className={"flex justify-center grow"}>
                 <div className={"flex flex-col max-w-3xl"}>
-                    <p className={"text-md text-gray-400 max-w-3xl"}>Ci-dessous vous pouvez entrer du texte et le soumettre à GPT-3 afin qu'il soit traité. Prendre en note que le texte doit être en anglais. Cette démonstration est seulement possible parce que GPT-3 est un réseau publique et open source. De plus, il fournit un API pour qu'on puisse intégré dans nos site web, comme on voit ici.</p>
+                    <p className={"text-md text-gray-400 max-w-3xl mb-2 2xl:mb-12"}>Ci-dessous vous pouvez entrer du texte et le soumettre à GPT-3 afin qu'il soit traité. Prendre en note que le texte doit être en anglais. Cette démonstration est seulement possible parce que GPT-3 est un réseau publique et open source. De plus, il fournit un API pour qu'on puisse intégré dans nos site web, comme on voit ici.</p>
+                    <p className={"text-gray-400 text-sm text-center mb-2"}><span className={"text-secondary"}>Exemple:</span> Explain the concept of neural networks.</p>
                     <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-4"}>
                         <textarea
-                            className={"bg-neutral-200 placeholder:text-gray-400 w-full mt-4 rounded h-36 p-2 mb-2 outline-none resize-none"}
+                            className={"bg-neutral-200 placeholder:text-gray-400 w-full rounded h-36 2xl:h-48 p-2 mb-4 outline-none resize-none"}
                             onChange={(event) => setInput(event.currentTarget.value)}
                             placeholder={"Entrez du texte ici..."}
                         />
                         <div
-                            className={"bg-neutral-200 flex flex-col w-full mt-4 rounded h-36 mb-2 outline-none resize-none"}
+                            className={"bg-neutral-200 flex flex-col w-full rounded h-36 2xl:h-48 mb-4 outline-none resize-none"}
                         >
                             <p className={`${response === "" ? "text-gray-400" : "text-black text-sm"} overflow-auto p-2`}>
                                 {response !== "" ? response : "La réponse sera affichée ici..."}
