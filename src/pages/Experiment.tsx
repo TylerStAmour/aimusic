@@ -11,23 +11,22 @@ export default () => {
     const submit = () => {
         submitGPTRequest(input)
             .then(resp => {
-                console.log("hello")
+                console.log(resp);
                 setResponse(resp);
             })
             .catch(error => {
-                console.log('aa');
                 setError(error);
             });
     };
 
     return (
-        <div className={"flex flex-col bg-neutral-900"}>
+        <div className={"flex flex-col bg-neutral-900 h-full"}>
             <Navigation />
             <div className={"flex flex-col items-center mb-16"}>
                 <p className={"text-4xl text-white"}>Expérimenté avec GPT-3</p>
                 <p className={"text-md text-gray-400 max-w-2xl text-center mt-2"}>Dévéloppée par OpenAI en 2020, GPT-3 est un réseau neuronal « transformeur. » Il fournit 4 modèles pré-entrainé pour produire du texte semblable à un humain. </p>
             </div>
-            <div className={"flex justify-center"}>
+            <div className={"flex justify-center grow"}>
                 <div className={"flex flex-col max-w-3xl"}>
                     <p className={"text-md text-gray-400 max-w-3xl"}>Ci-dessous vous pouvez entrer du texte et le soumettre à GPT-3 afin qu'il soit traité. Prendre en note que le texte doit être en anglais. Cette démonstration est seulement possible parce que GPT-3 est un réseau publique et open source. De plus, il fournit un API pour qu'on puisse intégré dans nos site web, comme on voit ici.</p>
                     <div className={"flex flex-col sm:grid sm:grid-cols-2 gap-4"}>
