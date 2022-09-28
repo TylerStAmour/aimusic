@@ -60,8 +60,8 @@ export default () => (
                         Les réseaux neuronaux comportent généralement trois couches : la couche d'entrée, la couche cachée et la couche de sortie. Le réseau reçoit des informations de la couche d'entrée, les analyse avec la couche cachée, puis envoie une réponse à la couche de sortie. Les réseaux neuronaux stockent des informations dans les nombreuses couches cachées, ce qui les aide à résoudre des problèmes et à reconnaître des motifs, comme un cerveau humain. Ces couches se multiplient et changent constamment, tout comme les neurones du cerveau humain. En anglais, on appelle cela "Deep Learning".<br/><br/> Enseigner un réseau neuronal est également similaire à l'enseignement d'un humain. Avant qu'il puisse résoudre des problèmes ou reconnaître des patrons, vous devez lui montrer la réponse au problème ou la manière de le résoudre, puis il établit un ensemble de règles qu'il doit suivre en fonction des informations qui lui ont été données.                    </p>
                     </div>
                 </div>
-                <div className={"flex h-52 w-full pr-2 pl-2 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg border-dark border-solid border-[1px]"}>
-                    <img src={"/svg/graph.svg"} />
+                <div className={"flex h-52 w-full p-3 sm:w-auto self-center justify-self-center bg-neutral-900 rounded-lg border-dark border-solid border-[1px]"}>
+                    <img src={"/svg/process.svg"} />
                 </div>
             </div>
         </div>
