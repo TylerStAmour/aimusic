@@ -124,7 +124,7 @@ export default () => {
             <div className={"flex flex-col jusitfy-center items-center bg-neutral-900 pt-20"}>
                 <p className={"text-3xl text-white mb-12 z-10"}>Plus d'information</p>
                 <div className={"flex flex-col sm:grid sm:grid-cols-2 text-xl sm:gap-10 mb-28 text-white"}>
-                    <a href={"/accueil"} className={"navlink w-full !ml-0 !mr-0 flex justify-center"}>
+                    <a href={"/"} className={"navlink w-full !ml-0 !mr-0 flex justify-center"}>
                         Accueil
                     </a>
                     <a href={"/impacte"} className={"navlink w-full !ml-0 !mr-0 flex justify-center"}>

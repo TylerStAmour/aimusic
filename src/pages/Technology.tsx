@@ -72,7 +72,7 @@ export default () => (
             <div className={"pb-12 sm:pb-0"}>
                 <p className={"text-white text-xl sm:text-2xl"}>Types de réseaux neuronaux</p>
                 <p className={"text-gray-400 mt-2"}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra quam sed aliquet laoreet. Proin mollis luctus posuere. Curabitur venenatis malesuada odio at interdum. Nam a laoreet diam. Duis vitae fringilla urna. Pellentesque tincidunt ultrices efficitur. Ut in luctus neque. Fusce lorem velit, pharetra et porttitor ac, vulputate sed magna. Vivamus non varius purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ornare lorem eget est hendrerit accumsan. Nulla eget neque metus. Vestibulum non risus pharetra, vehicula dolor ac, porttitor dui. In at nisl at erat feugiat aliquet. Praesent fringilla, urna et pulvinar blandit, felis massa ornare sem, quis vestibulum urna mi eu enim.
+                    Il y a plein de types de réseau neuronaux, mais il fonctionne tous d'une manière similare comme vue dans la dernière sections. Alors, voyons quelques types commun. Le premier exemple est les réseaux « feedforward » (MLP) qui est utilisé souvent pour le traitement du langage naturel. En suite, il y a les réseaux convolutifs (CNN) qui prend davantage de l'algébre linéaire et des matrices pour faire de l'identification des images, des modèles, ou pour la vision par ordinateur. Un autre type très populaire est les réseaux recurrent (RNN) qui sont utilisé pour prédire des résultats, prévoir des transactions boursières, prévoir le revenu d'une compagnie, etc.
                 </p>
             </div>
         </div>
